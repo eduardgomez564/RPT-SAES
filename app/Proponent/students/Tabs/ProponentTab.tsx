@@ -1,21 +1,23 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
+import * as XLSX from 'xlsx';
 import AddStudentModal from "../Modals/AddStudentModal";
 // Button Components
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import DangerButton from "@/components/Buttons/DangerButton";
-import TableList from "@/components/Tables/TableList";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
+import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
+import TableList from "@/components/Common/Tables/TableList";
 // Text Components
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import BodyText from "@/components/Texts/BodyText";
-import BodyLabel from "@/components/Texts/BodyLabel";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import BodyText from "@/components/Common/Texts/BodyText";
+import BodyLabel from "@/components/Common/Texts/BodyLabel";
 
 export default function ProponentTab() {
   const [students, setStudents] = useState<any[]>([]);
   const [showModal, setShowModal] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // React Hook Form setup
   const formMethods = useForm({
@@ -65,6 +67,53 @@ export default function ProponentTab() {
     setStudents([]);
   };
 
+  // Handle file upload
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    // Validate file type
+    const validTypes = ['.xlsx', '.xls'];
+    const fileExtension = file.name.toLowerCase().substring(file.name.lastIndexOf('.'));
+    if (!validTypes.includes(fileExtension)) {
+      alert('Please upload only Excel files (.xlsx or .xls)');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const data = new Uint8Array(e.target?.result as ArrayBuffer);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet);
+
+        const newStudents = jsonData.map((row: any, index: number) => ({
+          id: Date.now() + index,
+          studentId: row['Student ID'] || row['studentId'] || '',
+          name: row['Name'] || row['name'] || '',
+          grade: row['Grade'] || row['grade'] || '',
+          section: row['Section'] || row['section'] || '',
+          age: row['Age'] || row['age'] || '',
+          address: row['Address'] || row['address'] || '',
+          guardian: row['Guardian'] || row['guardian'] || '',
+          guardianContact: row['Guardian Contact'] || row['guardianContact'] || '',
+          englishPhonemic: row['English Phonemic'] || row['englishPhonemic'] || '',
+          filipinoPhonemic: row['Filipino Phonemic'] || row['filipinoPhonemic'] || '',
+          mathProficiency: row['Math Proficiency'] || row['mathProficiency'] || '',
+        }));
+
+        setStudents([...students, ...newStudents]);
+        alert(`Successfully imported ${newStudents.length} students`);
+      } catch (error) {
+        alert('Error reading Excel file. Please check the format.');
+      }
+    };
+    reader.readAsArrayBuffer(file);
+    event.target.value = '';
+  };
+
   return (
     <div>
       {/* Top Bar: Total and Actions */}
@@ -89,7 +138,7 @@ export default function ProponentTab() {
               <span className="hidden sm:inline">Add</span>
             </span>
           </UtilityButton>
-          <UtilityButton small>
+          <UtilityButton small onClick={() => fileInputRef.current?.click()}>
             <span className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12" />
@@ -99,6 +148,13 @@ export default function ProponentTab() {
               <span className="hidden sm:inline">Upload File</span>
             </span>
           </UtilityButton>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".xlsx,.xls"
+            onChange={handleFileUpload}
+            className="hidden"
+          />
           {students.length > 0 && (
             <DangerButton small className="bg-red-100 text-red-700 border-red-400 hover:bg-red-200" onClick={handleDeleteAll}>
               Delete All
@@ -143,3 +199,5 @@ export default function ProponentTab() {
     </div>
   );
 }
+
+

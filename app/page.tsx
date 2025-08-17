@@ -1,8 +1,8 @@
 import Image from "next/image";
-import RPTLogoTitle from "@/components/RPTLogoTitle";
+import RPTLogoTitle from "@/components/Common/RPTLogoTitle";
 import Link from "next/link";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import Footer from "@/components/Footer";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import Footer from "@/components/Common/Footer";
 
 export default function Home() {
   return (
@@ -161,7 +161,7 @@ export default function Home() {
               An innovative platform designed to support teachers in managing and tracking student progress in remedial programs.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/Login_Page" className="inline-block">
+              <Link href="/auth/login" className="inline-block">
                 <UtilityButton>Get Started</UtilityButton>
               </Link>
               <button className="px-6 py-3 font-medium text-green-700 hover:text-green-800 transition-colors">
@@ -491,3 +491,4 @@ export default function Home() {
     </div>
   );
 }
+

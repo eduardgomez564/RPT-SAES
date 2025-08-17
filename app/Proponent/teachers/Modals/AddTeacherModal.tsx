@@ -1,7 +1,7 @@
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import DangerButton from "@/components/Buttons/DangerButton";
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
 import { UseFormReturn } from "react-hook-form";
 
 interface AddTeacherModalProps {
@@ -15,7 +15,6 @@ export default function AddTeacherModal({ show, onClose, form, onSubmit }: AddTe
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = form;
   if (!show) return null;
@@ -37,41 +36,84 @@ export default function AddTeacherModal({ show, onClose, form, onSubmit }: AddTe
                 <TertiaryHeader title="Teacher ID" />
                 <input
                   className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
-                  placeholder="e.g. 2023-0001"
-                  {...register("teacherId", { required: "Teacher ID is required" })}
+                  placeholder="2023-0001"
+                  onInput={(e) => {
+                    const target = e.target as HTMLInputElement;
+                    target.value = target.value.replace(/[^0-9-]/g, '');
+                  }}
+                  {...register("teacherId", { 
+                    required: "Teacher ID is required",
+                    pattern: {
+                      value: /^\d{4}-\d{4}$/,
+                      message: "Teacher ID must be in format: 0000-0000"
+                    }
+                  })}
                 />
+                {errors.teacherId && <span className="text-red-500 text-xs">{errors.teacherId.message as string}</span>}
               </div>
               <div className="space-y-1">
                 <TertiaryHeader title="Full Name" />
                 <input
                   className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
-                  placeholder="e.g. Juan Dela Cruz"
-                  {...register("name", { required: "Full Name is required" })}
+                  placeholder="Surname, Firstname, M.I."
+                  onInput={(e) => {
+                    const target = e.target as HTMLInputElement;
+                    target.value = target.value.replace(/[^A-Za-z\s,.-]/g, '');
+                  }}
+                  {...register("name", { 
+                    required: "Full Name is required",
+                    pattern: {
+                      value: /^[A-Za-z\s,.-]+$/,
+                      message: "Name must contain only letters, spaces, commas, periods, and hyphens"
+                    }
+                  })}
                 />
+                {errors.name && <span className="text-red-500 text-xs">{errors.name.message as string}</span>}
               </div>
               <div className="space-y-1">
                 <TertiaryHeader title="Grade" />
-                <input
+                <select
                   className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
-                  placeholder="e.g. 3"
                   {...register("grade", { required: "Grade is required" })}
-                />
+                >
+                  <option value="" disabled className="rounded-md">Select grade</option>
+                  <option value="1" className="rounded-md">1</option>
+                  <option value="2" className="rounded-md">2</option>
+                  <option value="3" className="rounded-md">3</option>
+                  <option value="4" className="rounded-md">4</option>
+                  <option value="5" className="rounded-md">5</option>
+                  <option value="6" className="rounded-md">6</option>
+                </select>
+                {errors.grade && <span className="text-red-500 text-xs">{errors.grade.message as string}</span>}
               </div>
               <div className="space-y-1">
                 <TertiaryHeader title="Subject" />
-                <input
+                <select
                   className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
-                  placeholder="e.g. Math"
                   {...register("subject", { required: "Subject is required" })}
-                />
+                >
+                  <option value="" disabled className="rounded-md">Select subject</option>
+                  <option value="Math" className="rounded-md">Math</option>
+                  <option value="English" className="rounded-md">English</option>
+                  <option value="Filipino" className="rounded-md">Filipino</option>
+                </select>
+                {errors.subject && <span className="text-red-500 text-xs">{errors.subject.message as string}</span>}
               </div>
               <div className="space-y-1 md:col-span-2">
                 <TertiaryHeader title="Email" />
                 <input
                   className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
-                  placeholder="e.g. juan@email.com"
-                  {...register("email", { required: "Email is required" })}
+                  placeholder="juandelacruz@email.com"
+                  type="email"
+                  {...register("email", { 
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Please enter a valid email address"
+                    }
+                  })}
                 />
+                {errors.email && <span className="text-red-500 text-xs">{errors.email.message as string}</span>}
               </div>
             </div>
             <div className="flex justify-end gap-3 pt-4 border-t">
@@ -88,3 +130,5 @@ export default function AddTeacherModal({ show, onClose, form, onSubmit }: AddTe
     </div>
   );
 }
+
+

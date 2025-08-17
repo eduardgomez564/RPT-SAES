@@ -2,16 +2,16 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 // Button Components
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import DangerButton from "@/components/Buttons/DangerButton";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
+import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
 // Text Components
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import BodyText from "@/components/Texts/BodyText";
-import BodyLabel from "@/components/Texts/BodyLabel";
-import TableList from "@/components/Tables/TableList";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import BodyText from "@/components/Common/Texts/BodyText";
+import BodyLabel from "@/components/Common/Texts/BodyLabel";
+import TableList from "@/components/Common/Tables/TableList";
 
 export default function ParagraphTab() {
   // Example data, replace with real data as needed
@@ -69,3 +69,5 @@ export default function ParagraphTab() {
     </div>
   );
 }
+
+

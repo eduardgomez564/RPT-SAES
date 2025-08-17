@@ -3,14 +3,14 @@ import Sidebar from "@/components/Proponent/Sidebar";
 import Header from "@/components/Proponent/Header";
 import { useState } from "react";
 // Button Components
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import DangerButton from "@/components/Buttons/DangerButton";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
+import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
 // Text Components
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import BodyText from "@/components/Texts/BodyText";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import BodyText from "@/components/Common/Texts/BodyText";
 // Tabs
 import NonReaderTab from "./Tabs/NonReaderTab";
 import SyllableTab from "./Tabs/SyllableTab";
@@ -66,13 +66,13 @@ export default function Materials() {
               <div
                 className="
                 /* Mobile */
-                flex flex-wrap gap-2 mb-2
+                flex flex-wrap gap-2 mb-6
 
                 /* Tablet */
-                sm:flex-nowrap sm:gap-3 sm:mb-3
+                sm:flex-nowrap sm:gap-3 sm:mb-8
                 
                 /* Desktop */
-                md:mb-4 md:mt-1
+                md:mb-10 md:mt-2
               "
               >
                 {["Non Reader", "Syllable", "Word", "Sentence", "Paragraph"].map((tab) => (
@@ -125,3 +125,5 @@ export default function Materials() {
     </div>
   );
 }
+
+

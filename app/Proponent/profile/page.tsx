@@ -1,6 +1,6 @@
 import React from "react";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import BigButton from "@/components/Buttons/PrimaryButton";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import BigButton from "@/components/Common/Buttons/PrimaryButton";
 
 const user = {
   picture: "https://ui-avatars.com/api/?name=Doe,John,A&background=013300&color=fff&size=256",
@@ -149,3 +149,5 @@ function InfoField({ label, value }: { label: string; value: string }) {
     </div>
   );
 }
+
+

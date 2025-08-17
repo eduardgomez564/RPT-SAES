@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import DangerButton from "@/components/Buttons/DangerButton";
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import TableList from "@/components/Tables/TableList";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import TableList from "@/components/Common/Tables/TableList";
 
 export default function SentenceTab() {
   const [materials, setMaterials] = useState<any[]>([]);
@@ -64,3 +64,5 @@ export default function SentenceTab() {
     </div>
   );
 }
+
+

@@ -44,10 +44,36 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$ex
         })
     ],
     callbacks: {
-        async redirect () {
-            return '/Proponent/dashboard';
+        async signIn ({ user, account, profile }) {
+            return true;
+        },
+        async jwt ({ token, user, account }) {
+            if (user) {
+                token.id = user.id;
+            }
+            return token;
+        },
+        async session ({ session, token }) {
+            if (token) {
+                session.user.id = token.id;
+            }
+            return session;
+        },
+        async redirect ({ url, baseUrl }) {
+            if (url.startsWith('/')) {
+                return baseUrl + url;
+            }
+            if (new URL(url).origin === baseUrl) {
+                return url;
+            }
+            return baseUrl + '/Proponent/dashboard';
         }
-    }
+    },
+    pages: {
+        signIn: '/auth/login',
+        error: '/auth/login'
+    },
+    secret: process.env.NEXTAUTH_SECRET
 });
 }}),
 "[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)": (function(__turbopack_context__) {

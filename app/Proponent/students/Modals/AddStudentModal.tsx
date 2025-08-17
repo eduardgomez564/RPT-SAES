@@ -1,8 +1,8 @@
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import BodyLabel from "@/components/Texts/BodyLabel";
-import DangerButton from "@/components/Buttons/DangerButton";
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/common/Texts/TertiaryHeader";
+import BodyLabel from "@/components/Common/Texts/BodyLabel";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
 import { UseFormReturn } from "react-hook-form";
 
 interface AddStudentModalProps {
@@ -50,18 +50,38 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                   <input
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm"
                     placeholder="2023-0003"
-                    {...register("studentId", { required: true })}
+                    onInput={(e) => {
+                      const target = e.target as HTMLInputElement;
+                      target.value = target.value.replace(/[^0-9-]/g, '');
+                    }}
+                    {...register("studentId", { 
+                      required: "Student ID is required",
+                      pattern: {
+                        value: /^\d{4}-\d{4}$/,
+                        message: "Student ID must be in format: 0000-0000"
+                      }
+                    })}
                   />
-                  {errors.studentId && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.studentId && <span className="text-red-500 text-xs">{errors.studentId.message}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Full Name*" />
                   <input
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    placeholder="Juan Dela Cruz"
-                    {...register("name", { required: true })}
+                    placeholder="Surname, Firstname M.I."
+                    onInput={(e) => {
+                      const target = e.target as HTMLInputElement;
+                      target.value = target.value.replace(/[^A-Za-z\s,.-]/g, '');
+                    }}
+                    {...register("name", { 
+                      required: "Full name is required",
+                      pattern: {
+                        value: /^[A-Za-z\s,.-]+$/,
+                        message: "Name must contain only letters, spaces, commas, periods, and hyphens"
+                      }
+                    })}
                   />
-                  {errors.name && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.name && <span className="text-red-500 text-xs">{errors.name.message}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Age*" />
@@ -70,10 +90,16 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     placeholder="10"
                     type="number"
                     min="5"
-                    max="18"
-                    {...register("age", { required: true, min: 5, max: 18 })}
+                    {...register("age", { 
+                      required: "Age is required",
+                      min: {
+                        value: 5,
+                        message: "Age must be at least 5 years old"
+                      },
+                      valueAsNumber: true
+                    })}
                   />
-                  {errors.age && <span className="text-red-500 text-xs">Required (5-18)</span>}
+                  {errors.age && <span className="text-red-500 text-xs">{errors.age.message}</span>}
                 </div>
               </div>
             </div>
@@ -85,7 +111,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                   <BodyLabel title="Grade Level*" />
                   <select
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    {...register("grade", { required: true })}
+                    {...register("grade", { required: "Grade level is required" })}
                   >
                     <option value="" disabled>
                       Select grade
@@ -96,13 +122,13 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       </option>
                     ))}
                   </select>
-                  {errors.grade && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.grade && <span className="text-red-500 text-xs">{errors.grade.message}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Section*" />
                   <select
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    {...register("section", { required: true })}
+                    {...register("section", { required: "Section is required" })}
                   >
                     <option value="" disabled>
                       Select section
@@ -113,7 +139,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       </option>
                     ))}
                   </select>
-                  {errors.section && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.section && <span className="text-red-500 text-xs">{errors.section.message}</span>}
                 </div>
               </div>
             </div>
@@ -125,29 +151,48 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                   <BodyLabel title="Guardian*" />
                   <input
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    placeholder="Maria Dela Cruz"
-                    {...register("guardian", { required: true })}
+                    placeholder="Surname, Firstname M.I."
+                    onInput={(e) => {
+                      const target = e.target as HTMLInputElement;
+                      target.value = target.value.replace(/[^A-Za-z\s,.-]/g, '');
+                    }}
+                    {...register("guardian", { 
+                      required: "Guardian name is required",
+                      pattern: {
+                        value: /^[A-Za-z\s,.-]+$/,
+                        message: "Guardian name must contain only letters, spaces, commas, periods, and hyphens"
+                      }
+                    })}
                   />
-                  {errors.guardian && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.guardian && <span className="text-red-500 text-xs">{errors.guardian.message}</span>}
                 </div>
                 <div className="space-y-1 md:col-span-1">
                   <BodyLabel title="Contact Number*" />
                   <input
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    placeholder="09123456789"
-                    type="tel"
-                    {...register("guardianContact", { required: true })}
+                    placeholder="0912-345-6789"
+                    onInput={(e) => {
+                      const target = e.target as HTMLInputElement;
+                      target.value = target.value.replace(/[^0-9-]/g, '');
+                    }}
+                    {...register("guardianContact", { 
+                      required: "Contact number is required",
+                      pattern: {
+                        value: /^\d{4}-\d{3}-\d{4}$/,
+                        message: "Contact number must be in format: 0000-000-0000"
+                      }
+                    })}
                   />
-                  {errors.guardianContact && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.guardianContact && <span className="text-red-500 text-xs">{errors.guardianContact.message}</span>}
                 </div>
                 <div className="space-y-1 md:col-span-3">
                   <BodyLabel title="Address*" />
                   <input
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
                     placeholder="Brgy. Example, City, Province"
-                    {...register("address", { required: true })}
+                    {...register("address", { required: "Address is required" })}
                   />
-                  {errors.address && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.address && <span className="text-red-500 text-xs">{errors.address.message}</span>}
                 </div>
               </div>
             </div>
@@ -159,7 +204,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                   <BodyLabel title="English*" />
                   <select
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    {...register("englishPhonemic", { required: true })}
+                    {...register("englishPhonemic", { required: "English assessment level is required" })}
                   >
                     <option value="" disabled>
                       Select level
@@ -171,13 +216,13 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="Sentence">Sentence</option>
                     <option value="Paragraph">Paragraph</option>
                   </select>
-                  {errors.englishPhonemic && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.englishPhonemic && <span className="text-red-500 text-xs">{errors.englishPhonemic.message}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Filipino*" />
                   <select
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    {...register("filipinoPhonemic", { required: true })}
+                    {...register("filipinoPhonemic", { required: "Filipino assessment level is required" })}
                   >
                     <option value="" disabled>
                       Select level
@@ -189,13 +234,13 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="Sentence">Sentence</option>
                     <option value="Paragraph">Paragraph</option>
                   </select>
-                  {errors.filipinoPhonemic && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.filipinoPhonemic && <span className="text-red-500 text-xs">{errors.filipinoPhonemic.message}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Math*" />
                   <select
                     className="w-full bg-white border border-gray-300 text-black rounded-md px-3 py-2 text-sm "
-                    {...register("mathProficiency", { required: true })}
+                    {...register("mathProficiency", { required: "Math assessment level is required" })}
                   >
                     <option value="" disabled>
                       Select level
@@ -203,7 +248,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="-">- (Not Assessed)</option>
                     <option value="Non-Proficient">Non-Proficient</option>
                   </select>
-                  {errors.mathProficiency && <span className="text-red-500 text-xs">Required</span>}
+                  {errors.mathProficiency && <span className="text-red-500 text-xs">{errors.mathProficiency.message}</span>}
                 </div>
               </div>
             </div>
@@ -229,3 +274,5 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
     </div>
   );
 }
+
+

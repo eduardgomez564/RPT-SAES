@@ -1,7 +1,7 @@
 "use client";
-import RPTLogoTitle from "../RPTLogoTitle";
+import RPTLogoTitle from "../Common/RPTLogoTitle";
 import React from "react";
-import ProfileDropdown from "../ProfileDropdown";
+import ProfileDropdown from "../Common/ProfileDropdown";
 
 interface HeaderProps {
   title?: string;

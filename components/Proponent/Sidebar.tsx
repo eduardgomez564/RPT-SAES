@@ -1,6 +1,6 @@
 "use client";
 import React, { useCallback } from "react";
-import RPTLogoTitle from "../RPTLogoTitle";
+import RPTLogoTitle from "../Common/RPTLogoTitle";
 import { useRouter, usePathname } from "next/navigation";
 
 // Memoized SVG icons to prevent unnecessary re-renders

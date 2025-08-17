@@ -2,16 +2,16 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import AddStudentModal from "../Modals/AddStudentModal";
 // Button Components
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
-import UtilityButton from "@/components/Buttons/UtilityButton";
-import DangerButton from "@/components/Buttons/DangerButton";
-import TableList from "@/components/Tables/TableList";
+import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
+import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
+import DangerButton from "@/components/Common/Buttons/DangerButton";
+import TableList from "@/components/Common/Tables/TableList";
 // Text Components
-import SecondaryHeader from "@/components/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/Texts/TertiaryHeader";
-import BodyText from "@/components/Texts/BodyText";
-import BodyLabel from "@/components/Texts/BodyLabel";
+import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
+import BodyText from "@/components/Common/Texts/BodyText";
+import BodyLabel from "@/components/Common/Texts/BodyLabel";
 
 export default function TeacherTab() {
   const [students, setStudents] = useState<any[]>([]);
@@ -144,3 +144,5 @@ export default function TeacherTab() {
     </div>
   );
 }
+
+
