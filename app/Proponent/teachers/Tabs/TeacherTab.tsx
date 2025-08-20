@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import * as XLSX from 'xlsx';
 import AddTeacherModal from "../Modals/AddTeacherModal";
+import ConfirmationModal from "@/components/Common/Modals/ConfirmationModal";
 // Button Components
 import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
 import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
@@ -17,6 +18,8 @@ import BodyLabel from "@/components/Common/Texts/BodyLabel";
 export default function TeacherTab() {
   const [teachers, setTeachers] = useState<any[]>([]);
   const [showModal, setShowModal] = useState(false);
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // React Hook Form setup
@@ -61,18 +64,25 @@ export default function TeacherTab() {
     setTeachers([]);
   };
 
-  // Handle file upload
-  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+  // Handle file selection
+  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
-    // Validate file type
     const validTypes = ['.xlsx', '.xls'];
     const fileExtension = file.name.toLowerCase().substring(file.name.lastIndexOf('.'));
     if (!validTypes.includes(fileExtension)) {
       alert('Please upload only Excel files (.xlsx or .xls)');
       return;
     }
+
+    setSelectedFile(file);
+    setShowConfirmModal(true);
+  };
+
+  // Handle file upload confirmation
+  const handleUploadConfirm = () => {
+    if (!selectedFile) return;
 
     const reader = new FileReader();
     reader.onload = (e) => {
@@ -98,8 +108,20 @@ export default function TeacherTab() {
         alert('Error reading Excel file. Please check the format.');
       }
     };
-    reader.readAsArrayBuffer(file);
-    event.target.value = '';
+    reader.readAsArrayBuffer(selectedFile);
+    setSelectedFile(null);
+    setShowConfirmModal(false);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleUploadCancel = () => {
+    setSelectedFile(null);
+    setShowConfirmModal(false);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
 
   return (
@@ -140,7 +162,7 @@ export default function TeacherTab() {
             ref={fileInputRef}
             type="file"
             accept=".xlsx,.xls"
-            onChange={handleFileUpload}
+            onChange={handleFileSelect}
             className="hidden"
           />
           {teachers.length > 0 && (
@@ -183,6 +205,14 @@ export default function TeacherTab() {
           </>
         )}
         pageSize={10}
+      />
+      <ConfirmationModal
+        isOpen={showConfirmModal}
+        onClose={handleUploadCancel}
+        onConfirm={handleUploadConfirm}
+        title="Confirm File Upload"
+        message="Are you sure you want to upload this Excel file? This will import teacher data."
+        fileName={selectedFile?.name}
       />
     </div>
   );

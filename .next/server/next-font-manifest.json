@@ -1,13 +1,15 @@
 {
   "app": {
-    "[project]/app/Proponent/archive/page": [],
     "[project]/app/Proponent/calendar/page": [],
     "[project]/app/Proponent/dashboard/page": [],
     "[project]/app/Proponent/materials/page": [],
-    "[project]/app/Proponent/remedial/page": [],
     "[project]/app/Proponent/students/page": [],
     "[project]/app/Proponent/teachers/page": [],
     "[project]/app/Proponent/welcome/page": [],
+    "[project]/app/Teacher/dashboard/page": [],
+    "[project]/app/Teacher/materials/page": [],
+    "[project]/app/Teacher/students/page": [],
+    "[project]/app/Teacher/welcome/page": [],
     "[project]/app/auth/login/page": [],
     "[project]/app/page": []
   },

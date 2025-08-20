@@ -1,12 +1,14 @@
 {
-  "/Proponent/archive/page": "app/Proponent/archive/page.js",
   "/Proponent/calendar/page": "app/Proponent/calendar/page.js",
   "/Proponent/dashboard/page": "app/Proponent/dashboard/page.js",
   "/Proponent/materials/page": "app/Proponent/materials/page.js",
-  "/Proponent/remedial/page": "app/Proponent/remedial/page.js",
   "/Proponent/students/page": "app/Proponent/students/page.js",
   "/Proponent/teachers/page": "app/Proponent/teachers/page.js",
   "/Proponent/welcome/page": "app/Proponent/welcome/page.js",
+  "/Teacher/dashboard/page": "app/Teacher/dashboard/page.js",
+  "/Teacher/materials/page": "app/Teacher/materials/page.js",
+  "/Teacher/students/page": "app/Teacher/students/page.js",
+  "/Teacher/welcome/page": "app/Teacher/welcome/page.js",
   "/auth/login/page": "app/auth/login/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"

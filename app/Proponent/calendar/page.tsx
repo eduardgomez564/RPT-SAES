@@ -2,52 +2,67 @@
 import Sidebar from "@/components/Proponent/Sidebar";
 import Header from "@/components/Proponent/Header";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import AddScheduleModal from "./Modals/AddScheduleModal";
+import UtilityButton from "@/components/Common/Buttons/UtilityButton";
 
 export default function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [view, setView] = useState("month");
   const [showAddModal, setShowAddModal] = useState(false);
-  const [newSchedule, setNewSchedule] = useState({
-    title: "",
-    date: new Date(),
-    end: new Date(new Date().setHours(new Date().getHours() + 1)),
-    type: "class",
-    location: "",
+
+  // React Hook Form setup
+  const formMethods = useForm({
+    defaultValues: {
+      title: "",
+      date: "",
+      roomNo: "",
+      description: "",
+    },
   });
+  const { reset } = formMethods;
 
   // Activities data in state
   const [activities, setActivities] = useState([
     {
       id: 1,
       title: "Math Class",
+      day: "Wednesday",
+      roomNo: "Room 204",
+      description: "Algebra and Geometry lessons",
       date: new Date(2023, 10, 15, 9, 0),
       end: new Date(2023, 10, 15, 10, 30),
       type: "class",
-      location: "Room 204",
     },
     {
       id: 2,
       title: "Faculty Meeting",
+      day: "Thursday",
+      roomNo: "Conference Room B",
+      description: "Monthly faculty discussion",
       date: new Date(2023, 10, 16, 14, 0),
       end: new Date(2023, 10, 16, 15, 30),
       type: "meeting",
-      location: "Conference Room B",
     },
     {
       id: 3,
       title: "Parent Conference",
+      day: "Friday",
+      roomNo: "Office 101",
+      description: "Meeting with John Doe's parents",
       date: new Date(2023, 10, 17, 13, 0),
       end: new Date(2023, 10, 17, 14, 0),
       type: "appointment",
-      student: "John Doe",
     },
     {
       id: 4,
       title: "Science Fair Prep",
+      day: "Monday",
+      roomNo: "Science Lab",
+      description: "Preparing exhibits for the annual science fair",
       date: new Date(2023, 10, 20, 10, 0),
       end: new Date(2023, 10, 20, 12, 0),
       type: "event",
-      location: "Science Lab",
     },
   ]);
 
@@ -77,24 +92,18 @@ export default function Calendar() {
   };
 
   // Add new schedule
-  const handleAddSchedule = () => {
-    if (!newSchedule.title) return;
-
+  const handleAddSchedule = (data: any) => {
     const newActivity = {
       id: activities.length > 0 ? Math.max(...activities.map((a) => a.id)) + 1 : 1,
-      ...newSchedule,
-      end: new Date(newSchedule.date.getTime() + 60 * 60 * 1000), // Default 1 hour duration
+      ...data,
+      date: new Date(data.date), // Use selected date
+      end: new Date(new Date(data.date).getTime() + 60 * 60 * 1000), // Default 1 hour duration
+      type: "class",
     };
 
     setActivities([...activities, newActivity]);
     setShowAddModal(false);
-    setNewSchedule({
-      title: "",
-      date: new Date(),
-      end: new Date(new Date().setHours(new Date().getHours() + 1)),
-      type: "class",
-      location: "",
-    });
+    reset();
   };
 
   // Delete schedule
@@ -306,7 +315,7 @@ export default function Calendar() {
                     {activity.date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} -
                     {activity.end.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                   </div>
-                  <div className="text-xs text-gray-500 mt-1">{activity.location || activity.student || ""}</div>
+                  <div className="text-xs text-gray-500 mt-1">{activity.roomNo || activity.description || ""}</div>
                 </div>
               ))
             ) : (
@@ -384,11 +393,10 @@ export default function Calendar() {
                   <div className="flex-1">
                     <div className="font-medium text-gray-900">{activity.title}</div>
                     <div className="text-sm text-gray-600">
-                      {activity.type === "class"
-                        ? `Classroom: ${activity.location}`
-                        : activity.type === "meeting"
-                          ? `Location: ${activity.location}`
-                          : `Student: ${activity.student}`}
+                      {activity.roomNo && `Room: ${activity.roomNo}`}
+                      {activity.description && (
+                        <div className="text-xs text-gray-500 mt-1">{activity.description}</div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -533,171 +541,27 @@ export default function Calendar() {
                   >
                     Day
                   </button>
-                  <button
-                    onClick={() => setShowAddModal(true)}
-                    className="px-2 py-1 text-xs bg-green-600 hover:bg-green-700 rounded text-white
-                      /* Tablet */
-                      sm:px-3 sm:text-sm
-                    "
-                  >
-                    Add Schedule
-                  </button>
+                  <UtilityButton small onClick={() => setShowAddModal(true)}>
+                    <span className="flex items-center gap-1">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="4" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                      </svg>
+                      <span className="hidden sm:inline">Add Schedule</span>
+                    </span>
+                  </UtilityButton>
                 </div>
               </div>
 
               {/* Add Schedule Modal */}
-              {showAddModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50">
-                  <div
-                    className="
-                    /* Mobile */
-                    bg-white p-4 rounded-lg w-full max-w-sm mx-4
-                    
-                    /* Tablet */
-                    sm:p-6 sm:max-w-md
-                  "
-                  >
-                    <h3
-                      className="
-                      /* Mobile */
-                      text-lg font-medium mb-3
-                      
-                      /* Tablet */
-                      sm:text-xl sm:mb-4
-                    "
-                    >
-                      Add New Schedule
-                    </h3>
-
-                    <div
-                      className="space-y-3
-                      /* Tablet */
-                      sm:space-y-4
-                    "
-                    >
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700">Title*</label>
-                        <input
-                          type="text"
-                          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                          value={newSchedule.title}
-                          onChange={(e) => setNewSchedule({ ...newSchedule, title: e.target.value })}
-                          required
-                        />
-                      </div>
-
-                      <div
-                        className="grid grid-cols-2 gap-3
-                        /* Tablet */
-                        sm:gap-4
-                      "
-                      >
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700">Date*</label>
-                          <input
-                            type="date"
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                            value={newSchedule.date.toISOString().split("T")[0]}
-                            onChange={(e) => {
-                              const newDate = new Date(e.target.value);
-                              newDate.setHours(newSchedule.date.getHours());
-                              newDate.setMinutes(newSchedule.date.getMinutes());
-                              setNewSchedule({ ...newSchedule, date: newDate });
-                            }}
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700">Start Time*</label>
-                          <input
-                            type="time"
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                            value={newSchedule.date.toTimeString().substring(0, 5)}
-                            onChange={(e) => {
-                              const [hours, minutes] = e.target.value.split(":");
-                              const newDate = new Date(newSchedule.date);
-                              newDate.setHours(Number(hours));
-                              newDate.setMinutes(Number(minutes));
-                              setNewSchedule({ ...newSchedule, date: newDate });
-                            }}
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700">Duration (hours)*</label>
-                        <select
-                          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                          value={(newSchedule.end.getTime() - newSchedule.date.getTime()) / (60 * 60 * 1000)}
-                          onChange={(e) => {
-                            const hours = parseInt(e.target.value);
-                            const newEnd = new Date(newSchedule.date.getTime() + hours * 60 * 60 * 1000);
-                            setNewSchedule({ ...newSchedule, end: newEnd });
-                          }}
-                        >
-                          <option value="1">1 hour</option>
-                          <option value="2">2 hours</option>
-                          <option value="3">3 hours</option>
-                          <option value="4">4 hours</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700">Type*</label>
-                        <select
-                          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                          value={newSchedule.type}
-                          onChange={(e) => setNewSchedule({ ...newSchedule, type: e.target.value })}
-                        >
-                          <option value="class">Class</option>
-                          <option value="meeting">Meeting</option>
-                          <option value="appointment">Appointment</option>
-                          <option value="event">Event</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700">Location/Details</label>
-                        <input
-                          type="text"
-                          className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                          value={newSchedule.location}
-                          onChange={(e) => setNewSchedule({ ...newSchedule, location: e.target.value })}
-                          placeholder="Room number or other details"
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      className="mt-4 flex justify-end space-x-2
-                      /* Tablet */
-                      sm:mt-6 sm:space-x-3
-                    "
-                    >
-                      <button
-                        onClick={() => setShowAddModal(false)}
-                        className="px-3 py-1.5 text-sm bg-gray-200 hover:bg-gray-300 rounded
-                          /* Tablet */
-                          sm:px-4 sm:py-2
-                        "
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        onClick={handleAddSchedule}
-                        disabled={!newSchedule.title}
-                        className={`px-3 py-1.5 text-sm text-white rounded
-                          /* Tablet */
-                          sm:px-4 sm:py-2
-                          ${!newSchedule.title ? "bg-blue-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"}`}
-                      >
-                        Save Schedule
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              )}
+              <AddScheduleModal
+                show={showAddModal}
+                onClose={() => {
+                  setShowAddModal(false);
+                  reset();
+                }}
+                form={formMethods}
+                onSubmit={handleAddSchedule}
+              />
 
               {/* Calendar View */}
               <div className="border rounded-lg overflow-hidden">{renderCalendar()}</div>
