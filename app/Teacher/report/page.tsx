@@ -67,85 +67,85 @@ export default function Archive() {
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-gray-50">
-                      <th rowSpan={2} className="border border-gray-300 p-3 text-left font-semibold">Name of Learners</th>
-                      <th rowSpan={2} className="border border-gray-300 p-3 text-left font-semibold">Section</th>
-                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold">Pre-Assessment<br/>September</th>
-                      <th colSpan={3} className="border border-gray-300 p-3 text-center font-semibold">School-Based Reading Assessment</th>
-                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold">Post-Assessment<br/>March</th>
-                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold">Ending<br/>Numeracy Profile</th>
+                      <th rowSpan={2} className="border border-gray-300 p-3 text-left font-semibold text-black">Name of Learners</th>
+                      <th rowSpan={2} className="border border-gray-300 p-3 text-left font-semibold text-black">Section</th>
+                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold text-black">Pre-Assessment<br/>September</th>
+                      <th colSpan={3} className="border border-gray-300 p-3 text-center font-semibold text-black">School-Based Reading Assessment</th>
+                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold text-black">Post-Assessment<br/>March</th>
+                      <th rowSpan={2} className="border border-gray-300 p-3 text-center font-semibold text-black">Ending<br/>Numeracy Profile</th>
                     </tr>
                     <tr className="bg-gray-50">
-                      <th className="border border-gray-300 p-3 text-center font-semibold">October</th>
-                      <th className="border border-gray-300 p-3 text-center font-semibold">December</th>
-                      <th className="border border-gray-300 p-3 text-center font-semibold">Mid-Year<br/>Assessment<br/>February</th>
+                      <th className="border border-gray-300 p-3 text-center font-semibold text-black">October</th>
+                      <th className="border border-gray-300 p-3 text-center font-semibold text-black">December</th>
+                      <th className="border border-gray-300 p-3 text-center font-semibold text-black">Mid-Year<br/>Assessment<br/>February</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Agustia, Aiden Richard Paloma</td>
-                      <td className="border border-gray-300 p-3 text-center">III-Crimson</td>
-                      <td className="border border-gray-300 p-3 text-center">0</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Agustia, Aiden Richard Paloma</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-Crimson</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">0</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Romano, Gabriel Luis</td>
-                      <td className="border border-gray-300 p-3 text-center">III-Crimson</td>
-                      <td className="border border-gray-300 p-3 text-center">0</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Romano, Gabriel Luis</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-Crimson</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">0</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Sanchez, Eithan Jhara, Encinares</td>
-                      <td className="border border-gray-300 p-3 text-center">III-Violet</td>
-                      <td className="border border-gray-300 p-3 text-center">0</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Sanchez, Eithan Jhara, Encinares</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-Violet</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">0</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Ano, Sebastian Renz, Tabianan</td>
-                      <td className="border border-gray-300 p-3 text-center">III-White</td>
-                      <td className="border border-gray-300 p-3 text-center">5</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Ano, Sebastian Renz, Tabianan</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-White</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">5</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Mauricio, Christian Habonero</td>
-                      <td className="border border-gray-300 p-3 text-center">III-Yellow</td>
-                      <td className="border border-gray-300 p-3 text-center">11</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Mauricio, Christian Habonero</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-Yellow</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">11</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-300 p-3">Morales, Nyhl Zion</td>
-                      <td className="border border-gray-300 p-3 text-center">III-Blue</td>
-                      <td className="border border-gray-300 p-3 text-center">16</td>
-                      <td className="border border-gray-300 p-3 text-center">SylR</td>
-                      <td className="border border-gray-300 p-3 text-center">WR</td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
-                      <td className="border border-gray-300 p-3 text-center"></td>
+                      <td className="border border-gray-300 p-3 text-black">Morales, Nyhl Zion</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">III-Blue</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">16</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">SylR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black">WR</td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
+                      <td className="border border-gray-300 p-3 text-center text-black"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div className="mt-4 text-sm text-gray-600">
+              <div className="mt-4 text-sm text-black">
                 <p className="font-semibold mb-2">Legend:</p>
                 <div className="grid grid-cols-2 gap-4">
                   <div>

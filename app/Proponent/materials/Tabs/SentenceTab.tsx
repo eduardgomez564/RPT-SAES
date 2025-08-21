@@ -32,6 +32,14 @@ export default function SentenceTab() {
       >
         <TertiaryHeader title={`Total: ${materials.length}`} />
         <div className="flex gap-2">
+          <UtilityButton small>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              <span className="hidden sm:inline">Requests</span>
+            </span>
+          </UtilityButton>
           {materials.length > 0 && (
             <DangerButton small onClick={handleDeleteAll}>
               Delete All
@@ -43,9 +51,7 @@ export default function SentenceTab() {
         columns={[
           { key: "no", title: "No#" },
           { key: "title", title: "Title" },
-          { key: "phonemic", title: "Phonemic" },
-          { key: "dateToUse", title: "Date to use" },
-          { key: "status", title: "Status" },
+          { key: "dateAttached", title: "Date Attached" },
         ]}
         data={materials.map((material, idx) => ({
           ...material,
