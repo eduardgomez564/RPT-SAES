@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { signIn, getSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import RPTLogoTitle from "@/components/Common/RPTLogoTitle";
+import { clearOAuthState } from "@/lib/utils/clear-oauth-state";
 
 export default function Login() {
   const router = useRouter();
@@ -17,13 +18,30 @@ export default function Login() {
   };
   
   useEffect(() => {
-    const checkSession = async () => {
-      const session = await getSession();
-      if (session) {
-        router.push("/Proponent/dashboard");
-      }
-    };
-    checkSession();
+    const urlParams = new URLSearchParams(window.location.search);
+    const isLoggedOut = urlParams.get('logout') === 'true';
+    const hasError = urlParams.get('error');
+    const wasLoggedOut = sessionStorage.getItem('wasLoggedOut') === 'true';
+    
+    // Handle OAuth callback errors
+    if (hasError === 'OAuthCallback') {
+      clearOAuthState();
+      return;
+    }
+    
+    if (isLoggedOut) {
+      sessionStorage.setItem('wasLoggedOut', 'true');
+    }
+    
+    if (!isLoggedOut && !wasLoggedOut) {
+      const checkSession = async () => {
+        const session = await getSession();
+        if (session) {
+          router.push("/Proponent/dashboard");
+        }
+      };
+      checkSession();
+    }
   }, [router]);
   
   const handleLogin = (e: React.FormEvent) => {
@@ -41,15 +59,11 @@ export default function Login() {
     }
   };
 
-  const handleGoogleSignIn = async () => {
-    try {
-      await signIn('google', {
-        callbackUrl: '/Proponent/dashboard'
-      });
-    } catch (error) {
-      console.error('Google sign-in error:', error);
-      alert('Failed to sign in with Google. Please try again.');
-    }
+  const handleGoogleSignIn = () => {
+    sessionStorage.removeItem('wasLoggedOut');
+    signIn('google', {
+      callbackUrl: '/Proponent/welcome'
+    });
   };
 
   return (

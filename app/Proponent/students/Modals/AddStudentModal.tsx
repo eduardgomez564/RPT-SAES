@@ -1,5 +1,5 @@
 import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
-import TertiaryHeader from "@/components/common/Texts/TertiaryHeader";
+import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
 import BodyLabel from "@/components/Common/Texts/BodyLabel";
 import DangerButton from "@/components/Common/Buttons/DangerButton";
 import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
@@ -62,7 +62,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       }
                     })}
                   />
-                  {errors.studentId && <span className="text-red-500 text-xs">{errors.studentId.message}</span>}
+                  {errors.studentId && <span className="text-red-500 text-xs">{errors.studentId.message as string}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Full Name*" />
@@ -81,7 +81,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       }
                     })}
                   />
-                  {errors.name && <span className="text-red-500 text-xs">{errors.name.message}</span>}
+                  {errors.name && <span className="text-red-500 text-xs">{errors.name.message as string}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Age*" />
@@ -99,7 +99,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       valueAsNumber: true
                     })}
                   />
-                  {errors.age && <span className="text-red-500 text-xs">{errors.age.message}</span>}
+                  {errors.age && <span className="text-red-500 text-xs">{errors.age.message as string}</span>}
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       </option>
                     ))}
                   </select>
-                  {errors.grade && <span className="text-red-500 text-xs">{errors.grade.message}</span>}
+                  {errors.grade && <span className="text-red-500 text-xs">{errors.grade.message as string}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Section*" />
@@ -139,7 +139,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       </option>
                     ))}
                   </select>
-                  {errors.section && <span className="text-red-500 text-xs">{errors.section.message}</span>}
+                  {errors.section && <span className="text-red-500 text-xs">{errors.section.message as string}</span>}
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       }
                     })}
                   />
-                  {errors.guardian && <span className="text-red-500 text-xs">{errors.guardian.message}</span>}
+                  {errors.guardian && <span className="text-red-500 text-xs">{errors.guardian.message as string}</span>}
                 </div>
                 <div className="space-y-1 md:col-span-1">
                   <BodyLabel title="Contact Number*" />
@@ -183,7 +183,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                       }
                     })}
                   />
-                  {errors.guardianContact && <span className="text-red-500 text-xs">{errors.guardianContact.message}</span>}
+                  {errors.guardianContact && <span className="text-red-500 text-xs">{errors.guardianContact.message as string}</span>}
                 </div>
                 <div className="space-y-1 md:col-span-3">
                   <BodyLabel title="Address*" />
@@ -192,7 +192,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     placeholder="Brgy. Example, City, Province"
                     {...register("address", { required: "Address is required" })}
                   />
-                  {errors.address && <span className="text-red-500 text-xs">{errors.address.message}</span>}
+                  {errors.address && <span className="text-red-500 text-xs">{errors.address.message as string}</span>}
                 </div>
               </div>
             </div>
@@ -216,7 +216,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="Sentence">Sentence</option>
                     <option value="Paragraph">Paragraph</option>
                   </select>
-                  {errors.englishPhonemic && <span className="text-red-500 text-xs">{errors.englishPhonemic.message}</span>}
+                  {errors.englishPhonemic && <span className="text-red-500 text-xs">{errors.englishPhonemic.message as string}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Filipino*" />
@@ -234,7 +234,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="Sentence">Sentence</option>
                     <option value="Paragraph">Paragraph</option>
                   </select>
-                  {errors.filipinoPhonemic && <span className="text-red-500 text-xs">{errors.filipinoPhonemic.message}</span>}
+                  {errors.filipinoPhonemic && <span className="text-red-500 text-xs">{errors.filipinoPhonemic.message as string}</span>}
                 </div>
                 <div className="space-y-1">
                   <BodyLabel title="Math*" />
@@ -248,7 +248,7 @@ export default function AddStudentModal({ show, onClose, form, onSubmit }: AddSt
                     <option value="-">- (Not Assessed)</option>
                     <option value="Non-Proficient">Non-Proficient</option>
                   </select>
-                  {errors.mathProficiency && <span className="text-red-500 text-xs">{errors.mathProficiency.message}</span>}
+                  {errors.mathProficiency && <span className="text-red-500 text-xs">{errors.mathProficiency.message as string}</span>}
                 </div>
               </div>
             </div>

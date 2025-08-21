@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
 interface ProfileDropdownProps {
   email: string;
   name: string;
@@ -39,7 +40,7 @@ export default function ProfileDropdown({ email, name, onProfile, onLogout }: Pr
       </button>
       <button
         className="w-full text-left px-2 py-2 rounded text-[#013300] hover:bg-green-50 font-medium sm:px-4 sm:py-3 md:px-6 md:py-4"
-        onClick={() => router.push("/auth/login")}
+        onClick={() => signOut({ callbackUrl: '/auth/login?logout=true' })}
       >
         Logout
       </button>

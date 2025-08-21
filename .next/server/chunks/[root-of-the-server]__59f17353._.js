@@ -36,13 +36,16 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth__$5b$external
 var __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth$2f$providers$2f$google__$5b$external$5d$__$28$next$2d$auth$2f$providers$2f$google$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/next-auth/providers/google [external] (next-auth/providers/google, cjs)");
 ;
 ;
-const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth__$5b$external$5d$__$28$next$2d$auth$2c$__cjs$29$__["default"])({
+const authOptions = {
     providers: [
         (0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth$2f$providers$2f$google__$5b$external$5d$__$28$next$2d$auth$2f$providers$2f$google$2c$__cjs$29$__["default"])({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         })
     ],
+    session: {
+        strategy: "jwt"
+    },
     callbacks: {
         async signIn ({ user, account, profile }) {
             return true;
@@ -54,7 +57,7 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$ex
             return token;
         },
         async session ({ session, token }) {
-            if (token) {
+            if (token && session.user) {
                 session.user.id = token.id;
             }
             return session;
@@ -66,7 +69,7 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$ex
             if (new URL(url).origin === baseUrl) {
                 return url;
             }
-            return baseUrl + '/Proponent/dashboard';
+            return baseUrl + '/Proponent/welcome';
         }
     },
     pages: {
@@ -74,7 +77,8 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$ex
         error: '/auth/login'
     },
     secret: process.env.NEXTAUTH_SECRET
-});
+};
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$next$2d$auth__$5b$external$5d$__$28$next$2d$auth$2c$__cjs$29$__["default"])(authOptions);
 }}),
 "[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)": (function(__turbopack_context__) {
 

@@ -1,13 +1,17 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export default NextAuth({
+const authOptions = {
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     }),
   ],
+  session: {
+    strategy: "jwt" as const,
+  },
   callbacks: {
     async signIn({ user, account, profile }) {
       return true;
@@ -19,8 +23,8 @@ export default NextAuth({
       return token;
     },
     async session({ session, token }) {
-      if (token) {
-        session.user.id = token.id;
+      if (token && session.user) {
+        (session.user as any).id = token.id;
       }
       return session;
     },
@@ -31,12 +35,15 @@ export default NextAuth({
       if (new URL(url).origin === baseUrl) {
         return url;
       }
-      return baseUrl + '/Proponent/dashboard';
+      return baseUrl + '/Proponent/welcome';
     },
   },
   pages: {
     signIn: '/auth/login',
-    error: '/auth/login',
+    error: '/auth/login'
   },
   secret: process.env.NEXTAUTH_SECRET,
-});
+};
+
+export default NextAuth(authOptions);
+
