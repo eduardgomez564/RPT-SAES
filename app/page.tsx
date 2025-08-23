@@ -6,22 +6,22 @@ import Footer from "@/components/Common/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-[#013300] relative overflow-hidden">
+    <div className="min-h-screen bg-white text-[#013300] relative overflow-hidden scroll-smooth">
        {/* Navbar - Responsive Organization */}
-      <header className="fixed top-0 left-0 w-full z-30 bg-white shadow-md">
+      <header className="fixed top-0 left-0 w-full z-30 bg-white shadow-md scroll-smooth">
         <div
           className="
           /* Mobile */
           flex items-center justify-between px-6 py-4
           
           /* Tablet */
-          md:px-8 md:py-5
+          md:px-8 md:py-5 md:justify-center md:relative
           
           /* Desktop */
           lg:px-10
         "
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 md:absolute md:left-8 lg:left-10">
             <RPTLogoTitle small />
           </div>
           <nav
@@ -36,48 +36,48 @@ export default function Home() {
             lg:gap-16
           "
           >
-            <a
+            <Link
               href="#home"
               className="
               font-bold text-[#013300] hover:text-green-700
               /* Tablet */
-              md:text-lg
+              md:text-sm
               /* Desktop */
-              lg:text-xl
+              lg:text-base
             "
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#about"
               className="
               font-bold text-[#013300] hover:text-green-700
-              md:text-lg
-              lg:text-xl
+              md:text-sm
+              lg:text-base
             "
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="#quizzaur"
               className="
               font-bold text-[#013300] hover:text-green-700
-              md:text-lg
-              lg:text-xl
+              md:text-sm
+              lg:text-base
             "
             >
               QuizZaur
-            </a>
-            <a
+            </Link>
+            <Link
               href="#contacts"
               className="
               font-bold text-[#013300] hover:text-green-700
-              md:text-lg
-              lg:text-xl
+              md:text-sm
+              lg:text-base
             "
             >
               Contacts
-            </a>
+            </Link>
           </nav>
         </div>
       </header>
@@ -198,6 +198,8 @@ export default function Home() {
                 fill
                 className="object-cover"
                 style={{ objectFit: "cover" }}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
               <div
                 className="

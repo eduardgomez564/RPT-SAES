@@ -16,6 +16,7 @@
     "[project]/app/Teacher/report/page": [],
     "[project]/app/Teacher/students/page": [],
     "[project]/app/Teacher/welcome/page": [],
+    "[project]/app/_not-found/page": [],
     "[project]/app/auth/login/page": [],
     "[project]/app/page": []
   },
