@@ -160,7 +160,7 @@ export default function Home() {
             >
               An innovative platform designed to support teachers in managing and tracking student progress in remedial programs.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-4">
               <Link href="/auth/login" className="inline-block">
                 <UtilityButton>Get Started</UtilityButton>
               </Link>

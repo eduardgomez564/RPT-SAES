@@ -1,10 +1,8 @@
 {
   "/Proponent/calendar/page": "app/Proponent/calendar/page.js",
   "/Proponent/dashboard/page": "app/Proponent/dashboard/page.js",
-  "/Proponent/materials/page": "app/Proponent/materials/page.js",
-  "/Proponent/remedial/page": "app/Proponent/remedial/page.js",
-  "/Proponent/students/page": "app/Proponent/students/page.js",
   "/Proponent/welcome/page": "app/Proponent/welcome/page.js",
   "/auth/login/page": "app/auth/login/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
