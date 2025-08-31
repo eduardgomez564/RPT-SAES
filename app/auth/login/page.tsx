@@ -49,7 +49,7 @@ export default function Login() {
       if (!isLoggedOut && !wasLoggedOut) {
         const session = await getSession();
         if (session) {
-          router.push("/Proponent/dashboard");
+          router.push("/MasterTeacher");
         }
       }
     };
@@ -68,12 +68,12 @@ export default function Login() {
       const username = formData.get('username') as string;
       const password = formData.get('password') as string;
       
-      if (username === 'proponent' && password === 'proponent') {
-        router.push('/Proponent/welcome');
+      if (username === 'master teacher' && password === 'master teacher') {
+        router.push('/MasterTeacher/welcome');
       } else if (username === 'teacher' && password === 'teacher') {
         router.push('/Teacher/welcome');
       } else {
-        alert('Invalid credentials. Use "proponent" or "teacher" for both username and password.');
+        alert('Invalid credentials. Use "master teacher" or "teacher" for both username and password.');
       }
       
       setIsLoading(false);

@@ -663,13 +663,11 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/SAES/SAESImg.png",
                                         alt: "San Agustin Elementary School",
-                                        fill: true,
-                                        className: "object-cover",
-                                        style: {
-                                            objectFit: "cover"
-                                        },
+                                        width: 1200,
+                                        height: 500,
                                         priority: true,
-                                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                                        className: "object-cover rounded-xl shadow-lg",
+                                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 195,

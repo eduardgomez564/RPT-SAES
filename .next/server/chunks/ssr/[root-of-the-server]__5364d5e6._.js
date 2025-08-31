@@ -148,7 +148,7 @@ function Login() {
             if (!isLoggedOut && !wasLoggedOut) {
                 const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getSession"])();
                 if (session) {
-                    router.push("/Proponent/dashboard");
+                    router.push("/MasterTeacher");
                 }
             }
         };
@@ -165,12 +165,12 @@ function Login() {
             const formData = new FormData(e.target);
             const username = formData.get('username');
             const password = formData.get('password');
-            if (username === 'proponent' && password === 'proponent') {
-                router.push('/Proponent/welcome');
+            if (username === 'master teacher' && password === 'master teacher') {
+                router.push('/MasterTeacher/welcome');
             } else if (username === 'teacher' && password === 'teacher') {
                 router.push('/Teacher/welcome');
             } else {
-                alert('Invalid credentials. Use "proponent" or "teacher" for both username and password.');
+                alert('Invalid credentials. Use "master teacher" or "teacher" for both username and password.');
             }
             setIsLoading(false);
         });

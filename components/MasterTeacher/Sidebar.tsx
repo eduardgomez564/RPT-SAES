@@ -74,13 +74,13 @@ export default function Sidebar() {
   // Menu items with navigation paths
   const menuItems = React.useMemo(
     () => [
-      { label: "Dashboard", icon: <DashboardIcon />, path: "/Proponent/dashboard" },
-      { label: "Calendar", icon: <CalendarIcon />, path: "/Proponent/calendar" },
-      { label: "Students", icon: <StudentsIcon />, path: "/Proponent/students" },
-      { label: "Teachers", icon: <TeachersIcon />, path: "/Proponent/teachers" },
-      { label: "Materials", icon: <MaterialsIcon />, path: "/Proponent/materials" },
-      { label: "Remedial", icon: <RemedialIcon />, path: "/Proponent/remedial" },
-      { label: "Archive", icon: <ArchiveIcon />, path: "/Proponent/archive" },
+      { label: "Dashboard", icon: <DashboardIcon />, path: "/MasterTeacher/dashboard" },
+      { label: "Calendar", icon: <CalendarIcon />, path: "/MasterTeacher/calendar" },
+      { label: "Students", icon: <StudentsIcon />, path: "/MasterTeacher/students" },
+      { label: "Teachers", icon: <TeachersIcon />, path: "/MasterTeacher/teachers" },
+      { label: "Materials", icon: <MaterialsIcon />, path: "/MasterTeacher/materials" },
+      { label: "Remedial", icon: <RemedialIcon />, path: "/MasterTeacher/remedial" },
+      { label: "Archive", icon: <ArchiveIcon />, path: "/MasterTeacher/archive" },
     ],
     []
   );

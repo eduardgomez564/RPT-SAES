@@ -195,11 +195,11 @@ export default function Home() {
               <Image
                 src="/SAES/SAESImg.png"
                 alt="San Agustin Elementary School"
-                fill
-                className="object-cover"
-                style={{ objectFit: "cover" }}
+                width={1200}
+                height={500}
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                className="object-cover rounded-xl shadow-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
               />
               <div
                 className="
