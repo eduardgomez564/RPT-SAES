@@ -15,7 +15,7 @@ export default function RPTLogoTitle({ small = false }: RPTLogoTitleProps) {
       <div
         className={`font-bold bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent ${small ? "text-xl" : "text-5xl"}`}
       >
-        RPTracker
+        RPT-SAES
       </div>
     </div>
   );

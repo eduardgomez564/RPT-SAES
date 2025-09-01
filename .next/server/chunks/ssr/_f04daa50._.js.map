@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/eduar/OneDrive/Desktop/capstone_project/app/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\nimport \"@fontsource/geist/400.css\";\nimport \"@fontsource/geist/700.css\";\nimport \"@fontsource/geist-mono/400.css\";\nimport \"@fontsource/geist-mono/700.css\";\nimport \"./globals.css\";\nimport { Providers } from \"./providers\";\n\nexport const metadata: Metadata = {\n  title: \"RPTracker\",\n  description: \"Remedial Performance Tracker\",\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\" className=\"scroll-smooth\">\n      <body>{children}</body>\n    </html>\n  );\n}\n\n\n"],"names":[],"mappings":";;;;;;;;;;;AAQO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;QAAK,WAAU;kBACxB,cAAA,8OAAC;sBAAM;;;;;;;;;;;AAGb","debugId":null}},
-    {"offset": {"line": 44, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/eduar/OneDrive/Desktop/capstone_project/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
-}

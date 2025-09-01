@@ -1,8 +1,16 @@
 {
   "app": {
-    "[project]/app/Proponent/calendar/page": [],
-    "[project]/app/Proponent/dashboard/page": [],
-    "[project]/app/Proponent/welcome/page": [],
+    "[project]/app/MasterTeacher/dashboard/page": [],
+    "[project]/app/MasterTeacher/materials/page": [],
+    "[project]/app/MasterTeacher/remedial/page": [],
+    "[project]/app/MasterTeacher/students/page": [],
+    "[project]/app/MasterTeacher/teachers/page": [],
+    "[project]/app/MasterTeacher/welcome/page": [],
+    "[project]/app/Teacher/dashboard/page": [],
+    "[project]/app/Teacher/materials/page": [],
+    "[project]/app/Teacher/report/page": [],
+    "[project]/app/Teacher/students/page": [],
+    "[project]/app/Teacher/welcome/page": [],
     "[project]/app/auth/login/page": [],
     "[project]/app/page": []
   },

@@ -103,15 +103,16 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
-function PrimaryButton({ children, className = "", small = false, ...props }) {
+function PrimaryButton({ children, className = "", small = false, fullWidth = false, ...props }) {
     const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
+    const widthClass = fullWidth ? "w-full" : "";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        className: `bg-[#013300] text-white font-bold rounded-lg hover:bg-green-900 transition ${sizeClasses} ${className}`,
+        className: `bg-[#013300] text-white font-bold rounded-lg hover:bg-green-900 transition ${sizeClasses} ${widthClass} ${className}`,
         ...props,
         children: children
     }, void 0, false, {
         fileName: "[project]/components/Common/Buttons/PrimaryButton.tsx",
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
@@ -127,7 +128,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
 function UtilityButton({ children, className = "", small = false, ...props }) {
-    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-5 py-2";
+    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         className: `border-3 border-[#013300] text-white font-bold rounded-lg bg-[#013300] hover:border-green-900 hover:bg-green-900 transition ${sizeClasses} ${className}`,
         ...props,

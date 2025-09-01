@@ -31,33 +31,33 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
           <thead className="text-[#013300] bg-green-50 border-b border-gray-200 sticky top-0">
             <tr>
               {columns.map((col) => (
-                <th key={col.key} className="px-4 py-2 text-left">
-                  <TertiaryHeader title={col.title} />
+                <th key={col.key} className="px-4 py-0 text-left">
+                  <TertiaryHeader title={col.title} className="mb-0" />
                 </th>
               ))}
               {actions && (
-                <th className="px-4 py-2 text-left">
-                  <TertiaryHeader title="Actions" />
+                <th className="px-4 py-2 text-right">
+                  <div className="flex items-center justify-end gap-4">
+                    <TertiaryHeader title="Actions" className="mb-0" />
+                    <button
+                      onClick={() => setIsFullScreen(!isFullScreen)}
+                      className="p-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded transition-colors"
+                    >
+                      {isFullScreen ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m14 10 7-7"/><path d="M20 10h-6V4"/><path d="m3 21 7-7"/><path d="M4 14h6v6"/></svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>
+                      )}
+                    </button>
+                  </div>
                 </th>
               )}
-              <th className="px-4 py-2 text-right w-16">
-                <button 
-                  onClick={() => setIsFullScreen(!isFullScreen)}
-                  className="p-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded transition-colors"
-                >
-                  {isFullScreen ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m14 10 7-7"/><path d="M20 10h-6V4"/><path d="m3 21 7-7"/><path d="M4 14h6v6"/></svg>
-                  ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>
-                  )}
-                </button>
-              </th>
             </tr>
           </thead>
           <tbody className="text-gray-700">
             {paginatedData.length === 0 ? (
               <tr>
-                <td colSpan={columns.length + (actions ? 1 : 0) + 1} className="px-4 py-2 text-center text-gray-400">
+                <td colSpan={columns.length + (actions ? 1 : 0)} className="px-4 py-2 text-center text-gray-400">
                   No data available
                 </td>
               </tr>
@@ -69,8 +69,13 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
                       {col.render ? col.render(row) : row[col.key]}
                     </td>
                   ))}
-                  {actions && <td className="px-4 py-2 flex gap-2">{actions(row)}</td>}
-                  <td className="px-4 py-2"></td>
+                  {actions && (
+                    <td className="px-4 py-2 text-right">
+                      <div className="flex gap-2 justify-end">
+                        {actions(row)}
+                      </div>
+                    </td>
+                  )}
                 </tr>
               ))
             )}
@@ -102,4 +107,3 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
     </div>
   );
 }
-

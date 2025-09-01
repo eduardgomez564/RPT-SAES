@@ -5,9 +5,11 @@ TertiaryHeader is used for:
 - Table headers
 - Subject titles
 */
-export default function TertiaryHeader({ title }: { title: string }) {
+export default function TertiaryHeader({ title, className }: { title: string; className?: string }) {
   // Sanitize the title to prevent XSS attacks
   const sanitizedTitle = typeof title === 'string' ? title : '';
-  return <h3 className="font-semibold text-green-900">{sanitizedTitle}</h3>;
+  const defaultClasses = "text-xl font-semibold text-[#013300] mb-2";
+  const finalClasses = className ? className : defaultClasses;
+  return <h2 className={finalClasses}>{sanitizedTitle}</h2>;
 }
 

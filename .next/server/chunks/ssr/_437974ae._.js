@@ -42,7 +42,7 @@ function RPTLogoTitle({ small = false }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: `font-bold bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent ${small ? "text-xl" : "text-5xl"}`,
-                children: "RPTracker"
+                children: "RPT-SAES"
             }, void 0, false, {
                 fileName: "[project]/components/Common/RPTLogoTitle.tsx",
                 lineNumber: 15,
@@ -67,7 +67,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
 function UtilityButton({ children, className = "", small = false, ...props }) {
-    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-5 py-2";
+    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         className: `border-3 border-[#013300] text-white font-bold rounded-lg bg-[#013300] hover:border-green-900 hover:bg-green-900 transition ${sizeClasses} ${className}`,
         ...props,
@@ -587,7 +587,7 @@ function Home() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: " /* Mobile */ text-xl text-[#013300] mb-3  /* Tablet */ md:text-2xl  /* Desktop */ lg:text-3xl ",
-                                    children: "Welcome to RPTracker"
+                                    children: "Welcome to RPT-SAES"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 119,
@@ -663,13 +663,11 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/SAES/SAESImg.png",
                                         alt: "San Agustin Elementary School",
-                                        fill: true,
-                                        className: "object-cover",
-                                        style: {
-                                            objectFit: "cover"
-                                        },
+                                        width: 1200,
+                                        height: 500,
                                         priority: true,
-                                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                                        className: "object-cover rounded-xl shadow-lg",
+                                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 195,
@@ -730,7 +728,7 @@ function Home() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: " /* Mobile */ text-3xl font-bold text-green-900 mb-4 text-center  /* Tablet */ md:text-4xl ",
-                            children: "About RPTracker"
+                            children: "About RPT-SAES"
                         }, void 0, false, {
                             fileName: "[project]/app/page.tsx",
                             lineNumber: 264,
@@ -749,7 +747,7 @@ function Home() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: " /* Mobile */ text-green-900 leading-relaxed mb-6  /* Tablet */ md:text-lg ",
-                                    children: "RPTracker was created to revolutionize how educators track and manage student progress in remedial programs. Our platform simplifies literacy and numeracy program management, empowering teachers to provide personalized support for every student."
+                                    children: "RPT-SAES was created to revolutionize how educators track and manage student progress in remedial programs. Our platform simplifies literacy and numeracy program management, empowering teachers to provide personalized support for every student."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 287,
@@ -800,7 +798,7 @@ function Home() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                             className: "font-semibold text-green-900",
-                                                            children: "Comprehensive Tracking"
+                                                            children: "Progress Tracking"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
                                                             lineNumber: 307,
@@ -808,7 +806,7 @@ function Home() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "mt-1 text-green-800",
-                                                            children: "Monitor student progress across all remedial programs"
+                                                            children: "Monitor student performance in remedial program"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
                                                             lineNumber: 308,
@@ -936,7 +934,7 @@ function Home() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                             className: "font-semibold text-green-900",
-                                                            children: "Time-Saving Tools"
+                                                            children: "Remedial Management"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
                                                             lineNumber: 335,
@@ -944,7 +942,7 @@ function Home() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "mt-1 text-green-800",
-                                                            children: "Reduce administrative tasks by 60% on average"
+                                                            children: "Remedial program infused with technology"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
                                                             lineNumber: 336,
