@@ -205,7 +205,11 @@ export default function AttendanceTab({ students }: AttendanceTab) {
   return (
     <div>
       {/* Clean Header with Navigation */}
+<<<<<<< HEAD
       <div className="flex justify-between items-center mb-2">
+=======
+      <div className="flex justify-between items-center mb-6">
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         <div className="flex items-center gap-3">
           <button
             onClick={view === "Month" ? goToPreviousMonth : goToPreviousWeek}
@@ -284,7 +288,11 @@ export default function AttendanceTab({ students }: AttendanceTab) {
       </div>
 
       {/* Simple Legend */}
+<<<<<<< HEAD
       <div className="mb-2 flex items-center gap-6 text-sm text-gray-600">
+=======
+      <div className="mb-6 flex items-center gap-6 text-sm text-gray-600">
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         <span className="font-medium">Legend:</span>
         <div className="flex items-center gap-1">
           <div className="w-3 h-3 rounded-full bg-gray-300"></div>
@@ -300,10 +308,18 @@ export default function AttendanceTab({ students }: AttendanceTab) {
         </div>
       </div>
       
+<<<<<<< HEAD
     {/* Add custom styling to the table header */}
     <div className="[&_th]:py-2">
       <TableList columns={columns} data={attendanceData} pageSize={10} />
       </div>
+=======
+      <TableList
+        columns={columns}
+        data={attendanceData}
+        pageSize={10}
+      />
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     </div>
   );
 }

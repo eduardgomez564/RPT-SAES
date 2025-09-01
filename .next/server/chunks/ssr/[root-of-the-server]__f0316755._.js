@@ -1167,8 +1167,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function SecondaryHeader({ title }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
+<<<<<<< HEAD
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
         className: "text-xl font-semibold text-[#013300] mb-2",
+=======
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "text-xl font-bold text-[#013300] mb-2 md:mb-2",
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         children: sanitizedTitle
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/SecondaryHeader.tsx",
@@ -1187,16 +1192,27 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 ;
+<<<<<<< HEAD
 function PrimaryButton({ children, className = "", small = false, fullWidth = false, ...props }) {
     const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
     const widthClass = fullWidth ? "w-full" : "";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         className: `bg-[#013300] text-white font-bold rounded-lg hover:bg-green-900 transition ${sizeClasses} ${widthClass} ${className}`,
+=======
+function PrimaryButton({ children, className = "", small = false, ...props }) {
+    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        className: `bg-[#013300] text-white font-bold rounded-lg hover:bg-green-900 transition ${sizeClasses} ${className}`,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         ...props,
         children: children
     }, void 0, false, {
         fileName: "[project]/components/Common/Buttons/PrimaryButton.tsx",
+<<<<<<< HEAD
         lineNumber: 19,
+=======
+        lineNumber: 17,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         columnNumber: 5
     }, this);
 }
@@ -2008,10 +2024,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MasterTeacher$
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MasterTeacher$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/MasterTeacher/Header.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-ssr] (ecmascript)");
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
 // Modal Components
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$AddScheduleModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/AddScheduleModal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$ActivityDetailModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/ActivityDetailModal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$DeleteConfirmationModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/DeleteConfirmationModal.tsx [app-ssr] (ecmascript)");
+========
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$Proponent$2f$calendar$2f$Modals$2f$AddScheduleModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/Proponent/calendar/Modals/AddScheduleModal.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$Proponent$2f$calendar$2f$Modals$2f$ActivityDetailModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/Proponent/calendar/Modals/ActivityDetailModal.tsx [app-ssr] (ecmascript)");
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$AddScheduleModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/AddScheduleModal.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$ActivityDetailModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/ActivityDetailModal.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$DeleteConfirmationModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/MasterTeacher/calendar/Modals/DeleteConfirmationModal.tsx [app-ssr] (ecmascript)");
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
 "use client";
 ;
 ;
@@ -2023,7 +2050,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$cale
 ;
 function Calendar() {
     const [currentDate, setCurrentDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(new Date());
+<<<<<<< HEAD
+    const [view, setView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("month"); // month, week, or list
+=======
     const [view, setView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("month");
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     const [showAddModal, setShowAddModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showDeleteModal, setShowDeleteModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [selectedActivity, setSelectedActivity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -2070,6 +2101,11 @@ function Calendar() {
         const newDate = new Date(currentDate);
         if (view === "month") {
             newDate.setMonth(newDate.getMonth() - 1);
+<<<<<<< HEAD
+        } else if (view === "week") {
+            newDate.setDate(newDate.getDate() - 7);
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         } else {
             newDate.setDate(newDate.getDate() - 7);
         }
@@ -2079,6 +2115,11 @@ function Calendar() {
         const newDate = new Date(currentDate);
         if (view === "month") {
             newDate.setMonth(newDate.getMonth() + 1);
+<<<<<<< HEAD
+        } else if (view === "week") {
+            newDate.setDate(newDate.getDate() + 7);
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         } else {
             newDate.setDate(newDate.getDate() + 7);
         }
@@ -2115,6 +2156,10 @@ function Calendar() {
         setShowAddModal(false);
         reset();
     };
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     // Delete schedule with confirmation
     const handleDeleteClick = (activity)=>{
         setActivityToDelete(activity);
@@ -2146,6 +2191,15 @@ function Calendar() {
             default:
                 return "bg-gray-100 text-gray-800 border-gray-200";
         }
+<<<<<<< HEAD
+========
+    // Delete schedule
+    const handleDeleteSchedule = (id)=>{
+        setActivities(activities.filter((activity)=>activity.id !== id));
+        setSelectedActivity(null);
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     };
     // Render the calendar based on view
     const renderCalendar = ()=>{
@@ -2157,7 +2211,15 @@ function Calendar() {
             return renderListView();
         }
     };
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
     // List View
+========
+    // New List View
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+    // List View
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     const renderListView = ()=>{
         const activitiesByWeek = getActivitiesByWeek();
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2173,8 +2235,18 @@ function Calendar() {
                                 activities[0].date.getFullYear()
                             ]
                         }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                             lineNumber: 188,
+========
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 153,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                            lineNumber: 178,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2192,8 +2264,18 @@ function Calendar() {
                                                         className: "font-medium text-gray-900",
                                                         children: activity.title
                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 200,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 165,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 190,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2204,68 +2286,173 @@ function Calendar() {
                                                             year: "numeric"
                                                         })
                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 201,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 166,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 191,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-xs text-gray-500 mt-1",
                                                         children: activity.roomNo
                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 208,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 173,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 198,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                 lineNumber: 199,
+========
+                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                lineNumber: 164,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                lineNumber: 189,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: (e)=>{
                                                     e.stopPropagation();
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                     handleDeleteClick(activity);
+========
+                                                    handleDeleteSchedule(activity.id);
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                    handleDeleteClick(activity);
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 },
                                                 className: "text-gray-400 hover:text-red-500 text-lg",
                                                 children: "×"
                                             }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                 lineNumber: 210,
+========
+                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                lineNumber: 175,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                lineNumber: 200,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 198,
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 188,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 21
                                     }, this)
                                 }, activity.id, false, {
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                     lineNumber: 193,
+=======
+                                    lineNumber: 183,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                             lineNumber: 191,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 21
+                                    }, this)
+                                }, activity.id, false, {
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 158,
+                                    columnNumber: 19
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 156,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                            lineNumber: 181,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 15
                         }, this)
                     ]
                 }, week, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                     lineNumber: 187,
+========
+                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                    lineNumber: 152,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                    lineNumber: 177,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                     columnNumber: 13
                 }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-center text-gray-500 py-8",
                 children: "No activities scheduled. Double-click on a date in month view to add activities."
             }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                 lineNumber: 226,
+=======
+                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                lineNumber: 216,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
             lineNumber: 184,
+========
+                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                lineNumber: 191,
+                columnNumber: 11
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/Proponent/calendar/page.tsx",
+            lineNumber: 149,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+            lineNumber: 174,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
             columnNumber: 7
         }, this);
     };
@@ -2284,8 +2471,18 @@ function Calendar() {
                     days.push(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "h-20 p-1 border border-gray-100"
                     }, `empty-${i}-${j}`, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                         lineNumber: 249,
+========
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 214,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                        lineNumber: 239,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 21
                     }, this));
                 } else {
@@ -2301,19 +2498,48 @@ function Calendar() {
                                     className: "inline-block w-6 h-6 bg-blue-600 text-white rounded-full text-center leading-6",
                                     children: day
                                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                     lineNumber: 264,
+========
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 229,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                    lineNumber: 254,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 19
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: day
                                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                     lineNumber: 268,
+=======
+                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                    lineNumber: 258,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                 lineNumber: 262,
+========
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 233,
+                                    columnNumber: 19
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                lineNumber: 227,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                lineNumber: 252,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2324,13 +2550,21 @@ function Calendar() {
                                             onClick: ()=>setSelectedActivity(activity),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex justify-between items-center",
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "truncate",
                                                         children: activity.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                         lineNumber: 279,
+=======
+                                                        lineNumber: 269,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2342,18 +2576,48 @@ function Calendar() {
                                                         children: "×"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                         lineNumber: 280,
+=======
+                                                        lineNumber: 270,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                 lineNumber: 278,
+=======
+                                                lineNumber: 268,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 21
                                             }, this)
                                         }, activity.id, false, {
                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                             lineNumber: 273,
+========
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "truncate",
+                                                    children: activity.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                    lineNumber: 244,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                lineNumber: 243,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, activity.id, false, {
+                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                            lineNumber: 238,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                            lineNumber: 263,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                             columnNumber: 19
                                         }, this)),
                                     dayActivities.length > 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2364,20 +2628,50 @@ function Calendar() {
                                             " more"
                                         ]
                                     }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 293,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 249,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 283,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                 lineNumber: 271,
+========
+                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                lineNumber: 236,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                lineNumber: 261,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                 columnNumber: 15
                             }, this)
                         ]
                     }, `day-${day}`, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                         lineNumber: 257,
+========
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 222,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                        lineNumber: 247,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 13
                     }, this));
                     day++;
@@ -2387,8 +2681,18 @@ function Calendar() {
                 className: "grid grid-cols-7",
                 children: days
             }, `week-${i}`, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                 lineNumber: 304,
+========
+                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                lineNumber: 260,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                lineNumber: 294,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 9
             }, this));
         }
@@ -2408,27 +2712,66 @@ function Calendar() {
                             className: "p-2 text-center",
                             children: day
                         }, `${day}-${index}`, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                             lineNumber: 314,
+=======
+                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                            lineNumber: 304,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                     lineNumber: 312,
+========
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 270,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                    lineNumber: 268,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                    lineNumber: 302,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "divide-y",
                     children: weeks
                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                     lineNumber: 319,
+========
+                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                    lineNumber: 275,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                    lineNumber: 309,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
             lineNumber: 311,
+========
+            fileName: "[project]/app/Proponent/calendar/page.tsx",
+            lineNumber: 267,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+            lineNumber: 301,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
             columnNumber: 7
         }, this);
     };
@@ -2461,8 +2804,18 @@ function Calendar() {
                                     className: "font-medium text-gray-800 text-sm",
                                     children: dayNames[i]
                                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                     lineNumber: 352,
+========
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 308,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                    lineNumber: 342,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2476,25 +2829,64 @@ function Calendar() {
                                             className: "ml-2 text-xs bg-blue-600 text-white px-1.5 py-0.5 rounded-full",
                                             children: "Today"
                                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                             lineNumber: 358,
+========
+                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                            lineNumber: 314,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                            lineNumber: 348,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                     lineNumber: 353,
+========
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 309,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                    lineNumber: 343,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                             lineNumber: 351,
+=======
+                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                            lineNumber: 341,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                         lineNumber: 350,
+========
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 307,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 306,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        lineNumber: 340,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2515,8 +2907,14 @@ function Calendar() {
                                                     className: "font-medium text-gray-900 text-sm",
                                                     children: activity.title
                                                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                     lineNumber: 376,
+=======
+                                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                    lineNumber: 366,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2535,21 +2933,56 @@ function Calendar() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                     lineNumber: 377,
+========
+                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                    lineNumber: 332,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xs text-gray-600 mt-1"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                    lineNumber: 333,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                    lineNumber: 367,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-xs text-gray-500 mt-1",
                                                     children: activity.roomNo
                                                 }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                     lineNumber: 381,
+========
+                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                    lineNumber: 335,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                    lineNumber: 371,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                             lineNumber: 375,
+========
+                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                            lineNumber: 331,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                            lineNumber: 365,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2560,37 +2993,95 @@ function Calendar() {
                                             className: "text-gray-400 hover:text-red-500 text-lg",
                                             children: "×"
                                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                             lineNumber: 383,
+========
+                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                            lineNumber: 337,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                            lineNumber: 373,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                     lineNumber: 374,
+=======
+                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                    lineNumber: 364,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 19
                                 }, this)
                             }, activity.id, false, {
                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                 lineNumber: 366,
+========
+                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                    lineNumber: 330,
+                                    columnNumber: 19
+                                }, this)
+                            }, activity.id, false, {
+                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                lineNumber: 322,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                lineNumber: 356,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                 columnNumber: 17
                             }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-center text-gray-400 py-4 text-sm",
                             children: "No activities scheduled"
                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                             lineNumber: 396,
+=======
+                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                            lineNumber: 386,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                         lineNumber: 363,
+========
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 350,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 319,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        lineNumber: 353,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 11
                     }, this)
                 ]
             }, `weekday-${i}`, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                 lineNumber: 345,
+========
+                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                lineNumber: 301,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                lineNumber: 335,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 9
             }, this));
         }
@@ -2598,8 +3089,47 @@ function Calendar() {
             className: "divide-y",
             children: days
         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
             lineNumber: 403,
+========
+            fileName: "[project]/app/Proponent/calendar/page.tsx",
+            lineNumber: 357,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+            columnNumber: 12
+        }, this);
+    };
+    // Activity type colors
+    const getActivityColor = (type)=>{
+        switch(type){
+            case "class":
+                return "bg-blue-100 text-blue-800 border-blue-200";
+            case "meeting":
+                return "bg-green-100 text-green-800 border-green-200";
+            case "appointment":
+                return "bg-purple-100 text-purple-800 border-purple-200";
+            case "event":
+                return "bg-amber-100 text-amber-800 border-amber-200";
+            default:
+                return "bg-gray-100 text-gray-800 border-gray-200";
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex h-screen bg-white overflow-hidden",
+        children: [
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MasterTeacher$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                lineNumber: 408,
+========
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Proponent$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                lineNumber: 373,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+            lineNumber: 393,
             columnNumber: 12
         }, this);
     };
@@ -2608,7 +3138,8 @@ function Calendar() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MasterTeacher$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
-                lineNumber: 408,
+                lineNumber: 398,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2617,8 +3148,18 @@ function Calendar() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MasterTeacher$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         title: "Calendar"
                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                         lineNumber: 410,
+========
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 375,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                        lineNumber: 400,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -2650,18 +3191,46 @@ function Calendar() {
                                                                         d: "M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z",
                                                                         clipRule: "evenodd"
                                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                                         lineNumber: 420,
+=======
+                                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                                        lineNumber: 410,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                                     lineNumber: 419,
+=======
+                                                                    lineNumber: 409,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                                 lineNumber: 418,
+========
+                                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                        lineNumber: 385,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                    lineNumber: 384,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                lineNumber: 383,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                                lineNumber: 408,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2677,24 +3246,62 @@ function Calendar() {
                                                                         d: "M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z",
                                                                         clipRule: "evenodd"
                                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                                         lineNumber: 425,
+=======
+                                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                                        lineNumber: 415,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                                     lineNumber: 424,
+=======
+                                                                    lineNumber: 414,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                                 lineNumber: 423,
+========
+                                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                        lineNumber: 390,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                    lineNumber: 389,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                                lineNumber: 388,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                                lineNumber: 413,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 417,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 382,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 407,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2707,8 +3314,18 @@ function Calendar() {
                                                             day: "numeric"
                                                         })}` : "Activities by Week"
                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 429,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 394,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 419,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2716,14 +3333,34 @@ function Calendar() {
                                                         className: "px-3 py-1.5 text-sm bg-gray-100 hover:bg-gray-200 rounded-md text-gray-700",
                                                         children: "Today"
                                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                         lineNumber: 436,
+========
+                                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                        lineNumber: 401,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                        lineNumber: 426,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                 lineNumber: 416,
+========
+                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                lineNumber: 381,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                lineNumber: 406,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2736,8 +3373,18 @@ function Calendar() {
                                                             className: `px-3 py-1.5 text-xs rounded-md sm:text-sm ${view === "month" ? "bg-white text-gray-800 shadow-sm" : "text-gray-600 hover:text-gray-800"}`,
                                                             children: "Month"
                                                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                             lineNumber: 442,
+========
+                                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                            lineNumber: 407,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                            lineNumber: 432,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2745,8 +3392,18 @@ function Calendar() {
                                                             className: `px-3 py-1.5 text-xs rounded-md sm:text-sm ${view === "week" ? "bg-white text-gray-800 shadow-sm" : "text-gray-600 hover:text-gray-800"}`,
                                                             children: "Week"
                                                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                             lineNumber: 450,
+========
+                                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                            lineNumber: 415,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                            lineNumber: 440,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2754,25 +3411,64 @@ function Calendar() {
                                                             className: `px-3 py-1.5 text-xs rounded-md sm:text-sm ${view === "list" ? "bg-white text-gray-800 shadow-sm" : "text-gray-600 hover:text-gray-800"}`,
                                                             children: "List"
                                                         }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                             lineNumber: 458,
+========
+                                                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                            lineNumber: 423,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                            fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                            lineNumber: 448,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                                     fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                                     lineNumber: 441,
+=======
+                                                    fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                                    lineNumber: 431,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                                 lineNumber: 440,
+========
+                                                    fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                    lineNumber: 406,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                                lineNumber: 405,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                                lineNumber: 430,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 415,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 380,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 405,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$AddScheduleModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2785,8 +3481,18 @@ function Calendar() {
                                         onSubmit: handleAddSchedule,
                                         selectedDate: selectedDate
                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 471,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 436,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 461,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$ActivityDetailModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2797,8 +3503,14 @@ function Calendar() {
                                             if (activity) handleDeleteClick(activity);
                                         }
                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 483,
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 473,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$MasterTeacher$2f$calendar$2f$Modals$2f$DeleteConfirmationModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2813,43 +3525,109 @@ function Calendar() {
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                                         lineNumber: 493,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 448,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                        lineNumber: 483,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "border rounded-lg overflow-hidden bg-white",
                                         children: renderCalendar()
                                     }, void 0, false, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                         lineNumber: 506,
+========
+                                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                        lineNumber: 455,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                                        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                        lineNumber: 496,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                                 lineNumber: 413,
+=======
+                                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                                lineNumber: 403,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                             lineNumber: 412,
+=======
+                            lineNumber: 402,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+<<<<<<< HEAD
                         lineNumber: 411,
+========
+                                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                                lineNumber: 378,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/Proponent/calendar/page.tsx",
+                            lineNumber: 377,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/Proponent/calendar/page.tsx",
+                        lineNumber: 376,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                        lineNumber: 401,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
                 fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
                 lineNumber: 409,
+========
+                fileName: "[project]/app/Proponent/calendar/page.tsx",
+                lineNumber: 374,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+                fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+                lineNumber: 399,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
+<<<<<<< HEAD
+<<<<<<<< HEAD:.next/server/chunks/ssr/[root-of-the-server]__f0316755._.js
         fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
         lineNumber: 407,
+========
+        fileName: "[project]/app/Proponent/calendar/page.tsx",
+        lineNumber: 372,
+>>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e:.next/server/chunks/ssr/[root-of-the-server]__d2a450da._.js
+=======
+        fileName: "[project]/app/MasterTeacher/calendar/page.tsx",
+        lineNumber: 397,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         columnNumber: 5
     }, this);
 }

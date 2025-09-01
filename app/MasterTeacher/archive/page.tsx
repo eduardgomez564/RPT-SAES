@@ -1,5 +1,6 @@
 import Sidebar from "@/components/MasterTeacher/Sidebar";
 import Header from "@/components/MasterTeacher/Header";
+<<<<<<< HEAD
 // Button Components
 import PrimaryButton from "@/components/Common/Buttons/PrimaryButton";
 import SecondaryButton from "@/components/Common/Buttons/SecondaryButton";
@@ -9,6 +10,8 @@ import DangerButton from "@/components/Common/Buttons/DangerButton";
 import SecondaryHeader from "@/components/Common/Texts/SecondaryHeader";
 import TertiaryHeader from "@/components/Common/Texts/TertiaryHeader";
 import BodyText from "@/components/Common/Texts/BodyText";
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
 
 export default function Archive() {
   return (

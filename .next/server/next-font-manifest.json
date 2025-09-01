@@ -1,16 +1,24 @@
 {
   "app": {
+<<<<<<< HEAD
+=======
+    "[project]/app/MasterTeacher/archive/page": [],
+    "[project]/app/MasterTeacher/calendar/page": [],
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     "[project]/app/MasterTeacher/dashboard/page": [],
     "[project]/app/MasterTeacher/materials/page": [],
     "[project]/app/MasterTeacher/remedial/page": [],
     "[project]/app/MasterTeacher/students/page": [],
     "[project]/app/MasterTeacher/teachers/page": [],
     "[project]/app/MasterTeacher/welcome/page": [],
+<<<<<<< HEAD
     "[project]/app/Teacher/dashboard/page": [],
     "[project]/app/Teacher/materials/page": [],
     "[project]/app/Teacher/report/page": [],
     "[project]/app/Teacher/students/page": [],
     "[project]/app/Teacher/welcome/page": [],
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     "[project]/app/auth/login/page": [],
     "[project]/app/page": []
   },

@@ -1211,7 +1211,11 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 ;
 function UtilityButton({ children, className = "", small = false, ...props }) {
+<<<<<<< HEAD
     const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-6 py-3";
+=======
+    const sizeClasses = small ? "px-3 py-1.5 text-sm" : "px-5 py-2";
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         className: `border-3 border-[#013300] text-white font-bold rounded-lg bg-[#013300] hover:border-green-900 hover:bg-green-900 transition ${sizeClasses} ${className}`,
         ...props,
@@ -1271,8 +1275,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function SecondaryHeader({ title }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
+<<<<<<< HEAD
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
         className: "text-xl font-semibold text-[#013300] mb-2",
+=======
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "text-xl font-bold text-[#013300] mb-2 md:mb-2",
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         children: sanitizedTitle
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/SecondaryHeader.tsx",
@@ -1297,6 +1306,7 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 ;
+<<<<<<< HEAD
 function TertiaryHeader({ title, className }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
@@ -1308,6 +1318,17 @@ function TertiaryHeader({ title, className }) {
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/TertiaryHeader.tsx",
         lineNumber: 13,
+=======
+function TertiaryHeader({ title }) {
+    // Sanitize the title to prevent XSS attacks
+    const sanitizedTitle = typeof title === 'string' ? title : '';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "font-semibold text-green-900",
+        children: sanitizedTitle
+    }, void 0, false, {
+        fileName: "[project]/components/Common/Texts/TertiaryHeader.tsx",
+        lineNumber: 11,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         columnNumber: 10
     }, this);
 }
@@ -1346,6 +1367,113 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
         className: `w-full rounded-lg flex flex-col ${isFullScreen ? 'fixed inset-0 z-50 bg-white p-6' : 'relative'}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+<<<<<<< HEAD
+=======
+                className: "flex justify-end mb-2",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: ()=>setIsFullScreen(!isFullScreen),
+                    className: "p-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded transition-colors",
+                    children: isFullScreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "20",
+                        height: "20",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        strokeWidth: "2",
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "m14 10 7-7"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 35,
+                                columnNumber: 191
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M20 10h-6V4"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 35,
+                                columnNumber: 213
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "m3 21 7-7"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 35,
+                                columnNumber: 236
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M4 14h6v6"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 35,
+                                columnNumber: 257
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Common/Tables/TableList.tsx",
+                        lineNumber: 35,
+                        columnNumber: 13
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "20",
+                        height: "20",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        strokeWidth: "2",
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M15 3h6v6"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 37,
+                                columnNumber: 191
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "m21 3-7 7"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 37,
+                                columnNumber: 212
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "m3 21 7-7"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 37,
+                                columnNumber: 233
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M9 21H3v-6"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                lineNumber: 37,
+                                columnNumber: 254
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Common/Tables/TableList.tsx",
+                        lineNumber: 37,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Common/Tables/TableList.tsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                lineNumber: 29,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 className: `overflow-x-auto rounded-lg ${isFullScreen ? 'flex-1 overflow-y-auto' : 'md:max-h-96 md:overflow-y-auto'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
                     className: "min-w-full bg-white rounded-lg shadow-md",
@@ -1355,6 +1483,7 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                 children: [
                                     columns.map((col)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+<<<<<<< HEAD
                                             className: "px-4 py-0 text-left",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Common$2f$Texts$2f$TertiaryHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 title: col.title,
@@ -1362,10 +1491,19 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Common/Tables/TableList.tsx",
                                                 lineNumber: 35,
+=======
+                                            className: "px-4 py-2 text-left",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Common$2f$Texts$2f$TertiaryHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                title: col.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                                lineNumber: 47,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                                 columnNumber: 19
                                             }, this)
                                         }, col.key, false, {
                                             fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                             lineNumber: 34,
                                             columnNumber: 17
                                         }, this)),
@@ -1483,22 +1621,46 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                         }, void 0, true, {
                                             fileName: "[project]/components/Common/Tables/TableList.tsx",
                                             lineNumber: 40,
+=======
+                                            lineNumber: 46,
+                                            columnNumber: 17
+                                        }, this)),
+                                    actions && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                        className: "px-4 py-2 text-left",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Common$2f$Texts$2f$TertiaryHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            title: "Actions"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                            lineNumber: 52,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                         lineNumber: 39,
+=======
+                                        lineNumber: 51,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                 lineNumber: 32,
+=======
+                                lineNumber: 44,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                             lineNumber: 31,
+=======
+                            lineNumber: 43,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1529,6 +1691,7 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                                 columnNumber: 21
                                             }, this)),
                                         actions && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+<<<<<<< HEAD
                                             className: "px-4 py-2 text-right",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex gap-2 justify-end",
@@ -1542,6 +1705,14 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                             fileName: "[project]/components/Common/Tables/TableList.tsx",
                                             lineNumber: 73,
                                             columnNumber: 21
+=======
+                                            className: "px-4 py-2 flex gap-2",
+                                            children: actions(row)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Common/Tables/TableList.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 31
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         }, this)
                                     ]
                                 }, row.id || idx, true, {
@@ -1557,12 +1728,20 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                     lineNumber: 30,
+=======
+                    lineNumber: 42,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                 lineNumber: 29,
+=======
+                lineNumber: 41,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 7
             }, this),
             data.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1587,24 +1766,40 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                         d: "M15 19l-7-7 7-7"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                         lineNumber: 91,
+=======
+                                        lineNumber: 85,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                     lineNumber: 90,
+=======
+                                    lineNumber: 84,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 13
                                 }, this),
                                 "Prev"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                             lineNumber: 89,
+=======
+                            lineNumber: 83,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                         lineNumber: 88,
+=======
+                        lineNumber: 82,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1612,7 +1807,11 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                         children: page
                     }, void 0, false, {
                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                         lineNumber: 96,
+=======
+                        lineNumber: 90,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Common$2f$Buttons$2f$UtilityButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1635,29 +1834,49 @@ function TableList({ columns, data, actions, pageSize = 10 }) {
                                         d: "M9 5l7 7-7 7"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                         lineNumber: 101,
+=======
+                                        lineNumber: 95,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                                     lineNumber: 100,
+=======
+                                    lineNumber: 94,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                             lineNumber: 98,
+=======
+                            lineNumber: 92,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                         lineNumber: 97,
+=======
+                        lineNumber: 91,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Common/Tables/TableList.tsx",
+<<<<<<< HEAD
                 lineNumber: 87,
+=======
+                lineNumber: 81,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 columnNumber: 9
             }, this)
         ]

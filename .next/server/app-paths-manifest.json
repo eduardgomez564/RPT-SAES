@@ -1,15 +1,23 @@
 {
+<<<<<<< HEAD
+=======
+  "/MasterTeacher/archive/page": "app/MasterTeacher/archive/page.js",
+  "/MasterTeacher/calendar/page": "app/MasterTeacher/calendar/page.js",
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
   "/MasterTeacher/dashboard/page": "app/MasterTeacher/dashboard/page.js",
   "/MasterTeacher/materials/page": "app/MasterTeacher/materials/page.js",
   "/MasterTeacher/remedial/page": "app/MasterTeacher/remedial/page.js",
   "/MasterTeacher/students/page": "app/MasterTeacher/students/page.js",
   "/MasterTeacher/teachers/page": "app/MasterTeacher/teachers/page.js",
   "/MasterTeacher/welcome/page": "app/MasterTeacher/welcome/page.js",
+<<<<<<< HEAD
   "/Teacher/dashboard/page": "app/Teacher/dashboard/page.js",
   "/Teacher/materials/page": "app/Teacher/materials/page.js",
   "/Teacher/report/page": "app/Teacher/report/page.js",
   "/Teacher/students/page": "app/Teacher/students/page.js",
   "/Teacher/welcome/page": "app/Teacher/welcome/page.js",
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
   "/auth/login/page": "app/auth/login/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"

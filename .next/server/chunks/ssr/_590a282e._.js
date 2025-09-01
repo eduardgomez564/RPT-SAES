@@ -106,8 +106,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function SecondaryHeader({ title }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
+<<<<<<< HEAD
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
         className: "text-xl font-semibold text-[#013300] mb-2",
+=======
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "text-xl font-bold text-[#013300] mb-2 md:mb-2",
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         children: sanitizedTitle
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/SecondaryHeader.tsx",
@@ -126,6 +131,7 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
+<<<<<<< HEAD
 function TertiaryHeader({ title, className }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
@@ -137,6 +143,17 @@ function TertiaryHeader({ title, className }) {
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/TertiaryHeader.tsx",
         lineNumber: 13,
+=======
+function TertiaryHeader({ title }) {
+    // Sanitize the title to prevent XSS attacks
+    const sanitizedTitle = typeof title === 'string' ? title : '';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "font-semibold text-green-900",
+        children: sanitizedTitle
+    }, void 0, false, {
+        fileName: "[project]/components/Common/Texts/TertiaryHeader.tsx",
+        lineNumber: 11,
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         columnNumber: 10
     }, this);
 }
@@ -154,8 +171,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function BodyText({ title }) {
     // Sanitize the title to prevent XSS attacks
     const sanitizedTitle = typeof title === 'string' ? title : '';
+<<<<<<< HEAD
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
         className: "text-md font-normal text-black",
+=======
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        className: "text-md text-black",
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
         children: sanitizedTitle
     }, void 0, false, {
         fileName: "[project]/components/Common/Texts/BodyText.tsx",

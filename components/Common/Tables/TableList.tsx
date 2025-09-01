@@ -26,6 +26,18 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
 
   return (
     <div className={`w-full rounded-lg flex flex-col ${isFullScreen ? 'fixed inset-0 z-50 bg-white p-6' : 'relative'}`}>
+      <div className="flex justify-end mb-2">
+        <button
+          onClick={() => setIsFullScreen(!isFullScreen)}
+          className="p-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded transition-colors"
+        >
+          {isFullScreen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m14 10 7-7"/><path d="M20 10h-6V4"/><path d="m3 21 7-7"/><path d="M4 14h6v6"/></svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>
+          )}
+        </button>
+      </div>
       <div className={`overflow-x-auto rounded-lg ${isFullScreen ? 'flex-1 overflow-y-auto' : 'md:max-h-96 md:overflow-y-auto'}`}>
         <table className="min-w-full bg-white rounded-lg shadow-md">
           <thead className="text-[#013300] bg-green-50 border-b border-gray-200 sticky top-0">
@@ -69,6 +81,7 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
                       {col.render ? col.render(row) : row[col.key]}
                     </td>
                   ))}
+<<<<<<< HEAD
                   {actions && (
                     <td className="px-4 py-2 text-right">
                       <div className="flex gap-2 justify-end">
@@ -76,6 +89,9 @@ export default function TableList({ columns, data, actions, pageSize = 10 }: Tab
                       </div>
                     </td>
                   )}
+=======
+                  {actions && <td className="px-4 py-2 flex gap-2">{actions(row)}</td>}
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
                 </tr>
               ))
             )}

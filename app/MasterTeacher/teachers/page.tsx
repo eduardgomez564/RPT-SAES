@@ -17,8 +17,11 @@ import AttendanceTab from "./Tabs/AttendanceTab";
 
 export default function Teachers() {
   const [activeTab, setActiveTab] = useState("Teachers");
+<<<<<<< HEAD
   // Lifted teachers state so both tabs share the same data
   const [teachers, setTeachers] = useState<any[]>([]);
+=======
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
 
   return (
     <div
@@ -112,8 +115,13 @@ export default function Teachers() {
                 sm:mt-6
               "
               >
+<<<<<<< HEAD
                 {activeTab === "Teachers" && <TeacherTab teachers={teachers} setTeachers={setTeachers} />}
                 {activeTab === "Attendance" && <AttendanceTab teachers={teachers} />}
+=======
+                {activeTab === "Teachers" && <TeacherTab />}
+                {activeTab === "Attendance" && <AttendanceTab />}
+>>>>>>> 91ee4f8e40c7d584a635467f2d0fd6d832dc4e3e
               </div>
             </div>
           </div>
