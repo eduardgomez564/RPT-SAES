@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "@fontsource/geist/400.css";
 import "@fontsource/geist/700.css";

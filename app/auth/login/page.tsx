@@ -76,6 +76,10 @@ export default function Login() {
         alert('Invalid credentials. Use "master teacher" or "teacher" for both username and password.');
       }
       
+        const [showOTPForm, setShowOTPForm] = useState(false);
+        const [otpEmail, setOtpEmail] = useState("");
+        const [otp, setOtp] = useState("");
+        const [otpSent, setOtpSent] = useState(false);
       setIsLoading(false);
     });
   }, [router]);
